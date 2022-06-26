@@ -588,6 +588,12 @@ img {
   padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu-open-btn {
+    display: none;
+  }
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }

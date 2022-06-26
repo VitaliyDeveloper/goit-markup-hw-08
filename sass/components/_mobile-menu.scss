@@ -20,8 +20,6 @@
 .mobile-menu__container {
 position: relative;
 padding: 48px 40px;
-
-
 }
 
 .mobile-menu__close-btn {
@@ -32,4 +30,11 @@ padding: 48px 40px;
     border: none;
     line-height: 0;
     padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu-open-btn {
+        display: none;
+    }
+    
 }
