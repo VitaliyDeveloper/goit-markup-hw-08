@@ -43,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-open-btn" type="button"><svg class="mobile-menu-open-btn-icon">
+        <button class="mobile-menu-open-btn" type="button" data-menu-open><svg class="mobile-menu-open-btn-icon" width="40" height="40">
           <use href="./images/sprites-svg.svg#icon-menu"></use>
         </svg></button>
         <ul class="head-contact list">
@@ -64,6 +64,55 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu__container">
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./images/sprites-svg.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list mobile-menu__list-nav list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link current-link link" href="index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#">Контакты</a>
+          </li>
+        </ul>
+          <ul class="mobile-menu__list mobile-menu__list-contact list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__list mobile-menu__list-socisl list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link current-link link" href="#"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -623,6 +672,7 @@
         </button>
       </div>
     </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
