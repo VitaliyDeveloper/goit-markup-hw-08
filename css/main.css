@@ -687,7 +687,7 @@ img {
 .mobile-menu__list-nav {
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #212121;
 }
