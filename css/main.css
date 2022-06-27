@@ -680,6 +680,10 @@ img {
   padding: 0;
 }
 
+.current-link {
+  color: var(--highlight-text-color);
+}
+
 .mobile-menu__list-nav {
   font-weight: 500;
   font-size: 40px;
@@ -756,14 +760,13 @@ img {
 @media screen and (min-width: 480px) {
   .heroes {
     background-color: var(--accent-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroes.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 767px;
-    height: 400px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -889,55 +892,91 @@ img {
   }
 }
 
-.about-us-section {
-  padding-top: 94px;
+@media screen and (min-width: 480px) {
+  .about-us-section__list {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 120px;
+    left: 15px;
+    top: 520px;
+  }
+  .about-us-section__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .about-us-section__div-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+  }
+  .about-us-section__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .about-us-section__description {
+    color: #757575;
+  }
+  .about-us-section__item {
+    margin-top: 30px;
+    width: 450px;
+  }
+  .our-work-section {
+    display: none;
+  }
 }
 
-.about-us-section__list {
-  display: flex;
-  margin-top: -30px;
-}
-
-.about-us-section__item {
-  margin-top: 30px;
-  width: 270px;
-}
-
-.about-us-section__item:not(:first-child) {
-  margin-left: 30px;
-}
-
-.about-us-section__div-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.about-us-section__icon {
-  width: 70px;
-  height: 70px;
-}
-
-.about-us-section__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
-}
-
-.about-us-section__description {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--text-color-contact);
+@media screen and (min-width: 1200px) {
+  .about-us-section {
+    padding-top: 94px;
+  }
+  .about-us-section__list {
+    display: flex;
+    margin-top: -30px;
+  }
+  .about-us-section__item {
+    margin-top: 30px;
+    width: 270px;
+  }
+  .about-us-section__item:not(:first-child) {
+    margin-left: 30px;
+  }
+  .about-us-section__div-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .about-us-section__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .about-us-section__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+  }
+  .about-us-section__description {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-color-contact);
+  }
 }
 
 .our-work-section__list {
