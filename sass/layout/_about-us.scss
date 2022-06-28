@@ -1,7 +1,5 @@
 @media screen and (min-width:480px) {
 .about-us-section__list {
-  display: flex;
-  flex-direction: column;
   width: 450px;
   height: 120px;
   left: 15px;
@@ -48,7 +46,23 @@
 
 
 @media screen and (min-width:768px) {
-  
+  .about-us-section__list {
+    width: 450px;
+    height: 120px;
+    left: 15px;
+    top: 520px;
+  }
+
+  .about-us-section__div-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 354px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 }
 
 
